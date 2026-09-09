@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ORION — a local Python-powered desktop AI assistant built by Zain.">
+  <title>ORION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/orion-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#overview" aria-label="ORION home">
+      <img src="assets/orion-logo.png" alt="ORION logo">
+      <span>ORION</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#overview">Overview</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#developer">Developer</a>
+    </nav>
+
+    <a class="nav-cta" href="#download">Download <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#overview">Overview</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#developer">Developer</a>
+    <a href="#download">Download ORION ↗</a>
+  </div>
+
+  <main id="overview">
+    <section class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><i></i> OFFLINE AI ASSISTANT</div>
+        <h1 class="hero-title">
+          <span class="line reveal">Meet <em>ORION.</em></span>
+          <span class="line reveal delay-1">Your personal AI assistant,</span>
+          <span class="line reveal delay-2">built to run locally.</span>
+        </h1>
+        <p class="hero-text reveal delay-3">
+          A Python-powered desktop assistant designed to bring voice interaction,
+          automation and everyday computer assistance closer to your workflow.
+        </p>
+        <div class="hero-actions reveal delay-4">
+          <a class="button button-primary" href="#download">Download ORION <span>↗</span></a>
+          <a class="button button-ghost" href="#capabilities">Explore capabilities <span>↓</span></a>
+        </div>
+        <div class="hero-meta reveal delay-4">
+          <span><i class="pulse"></i> SYSTEM READY</span>
+          <span>Built by Zain</span>
+        </div>
+      </div>
+
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
+        <div class="logo-halo"></div>
+        <img src="assets/orion-logo.png" alt="" class="hero-logo">
+        <div class="orbit-dot"></div>
+      </div>
+
+      <div class="system-panel glass">
+        <div class="panel-top"><span>ORION SYSTEM</span><span class="panel-dot"></span></div>
+        <div class="system-grid">
+          <div><small>STATUS</small><strong>ONLINE</strong></div>
+          <div><small>MODE</small><strong>LOCAL</strong></div>
+          <div><small>ENGINE</small><strong>PYTHON</strong></div>
+          <div><small>VERSION</small><strong>1.0</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="section-kicker">01 / THE IDEA</div>
+      <div class="intro-grid">
+        <h2 class="display">More than a<br><span>voice assistant.</span></h2>
+        <div class="intro-copy">
+          <p class="lead">ORION is a local desktop assistant created to make interacting with a computer feel more natural.</p>
+          <p>Built with Python, it explores the connection between voice interaction, automation and practical desktop assistance — all through one focused experience.</p>
+          <div class="word-stack">
+            <span>Listen.</span><span>Understand.</span><span>Respond.</span><span>Assist.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities section" id="capabilities">
+      <div class="section-heading">
+        <div class="section-kicker">02 / CAPABILITIES</div>
+        <h2 class="display">What ORION<br><span>can do.</span></h2>
+        <p>Designed around useful, practical interaction with your computer.</p>
+      </div>
+
+      <div class="cap-grid">
+        <article class="cap-card glass">
+          <span class="cap-num">01</span><span class="cap-icon">◉</span>
+          <h3>Voice Interaction</h3>
+          <p>Listen to supported voice commands and respond through a conversational interface.</p>
+          <span class="cap-line"></span>
+        </article>
+        <article class="cap-card glass">
+          <span class="cap-num">02</span><span class="cap-icon">⌁</span>
+          <h3>Desktop Assistance</h3>
+          <p>Perform supported computer actions and make repetitive interactions quicker.</p>
+          <span class="cap-line"></span>
+        </article>
+        <article class="cap-card glass">
+          <span class="cap-num">03</span><span class="cap-icon">⌕</span>
+          <h3>Information</h3>
+          <p>Help retrieve information and answer supported questions from your workflow.</p>
+          <span class="cap-line"></span>
+        </article>
+        <article class="cap-card glass">
+          <span class="cap-num">04</span><span class="cap-icon">↯</span>
+          <h3>Productivity</h3>
+          <p>Assist with everyday tasks and simple automations where ORION is configured to do so.</p>
+          <span class="cap-line"></span>
+        </article>
+        <article class="cap-card glass wide">
+          <div>
+            <span class="cap-num">05</span><span class="cap-icon">⌘</span>
+            <h3>Local System Interaction</h3>
+          </div>
+          <p>ORION is designed to interact with the local machine through the capabilities implemented in its Python application.</p>
+          <span class="cap-line"></span>
+        </article>
+      </div>
+      <p class="disclaimer">Capabilities shown here should be matched to the actual ORION Python build before public release.</p>
+    </section>
+
+    <section class="process section" id="how-it-works">
+      <div class="section-kicker">03 / HOW IT WORKS</div>
+      <div class="process-wrap">
+        <div class="process-intro">
+          <h2 class="display">Three steps.<br><span>One assistant.</span></h2>
+          <p>A simple interaction loop keeps the experience focused.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">01</div>
+            <div><span>LISTEN</span><h3>Your command comes first.</h3><p>ORION receives a supported voice or input command.</p></div>
+          </article>
+          <article class="step">
+            <div class="step-number">02</div>
+            <div><span>PROCESS</span><h3>Python interprets the request.</h3><p>The application decides what response or supported action is appropriate.</p></div>
+          </article>
+          <article class="step">
+            <div class="step-number">03</div>
+            <div><span>ASSIST</span><h3>ORION responds.</h3><p>It carries out the configured action or gives the user a response.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section section">
+      <div class="terminal-copy">
+        <div class="section-kicker">04 / LOCAL EXPERIENCE</div>
+        <h2 class="display">Built for the<br><span>machine in front of you.</span></h2>
+        <p>Instead of presenting ORION as a web chatbot, the experience is centered around a Python desktop application running locally.</p>
+      </div>
+      <div class="terminal glass">
+        <div class="terminal-bar"><span></span><span></span><span></span><b>orion-terminal</b></div>
+        <div class="terminal-body" id="terminalText"></div>
+      </div>
+    </section>
+
+    <section class="download section" id="download">
+      <div class="download-card">
+        <div class="download-glow"></div>
+        <div class="section-kicker">05 / GET ORION</div>
+        <h2 class="display">Ready to meet<br><span>ORION?</span></h2>
+        <p>Download the offline package, extract it and launch the Python assistant on a compatible computer.</p>
+        <div class="download-info">
+          <div><small>APPLICATION</small><strong>ORION</strong></div>
+          <div><small>TYPE</small><strong>PYTHON APP</strong></div>
+          <div><small>VERSION</small><strong>1.0</strong></div>
+        </div>
+        <a class="button button-primary download-btn" href="pycode (1).exe" download="pycode (1).exe" id="downloadBtn">
+          Download ORION <span>↓</span>
+        </a>
+        <p class="download-note" id="downloadNote">After downloading, extract the package and run the included launcher.</p>
+      </div>
+    </section>
+
+    <section class="install section">
+      <div class="section-heading">
+        <div class="section-kicker">06 / QUICK START</div>
+        <h2 class="display">How to run<br><span>ORION.</span></h2>
+      </div>
+      <div class="install-grid">
+        <div class="install-step"><span>01</span><h3>Download</h3><p>Get the ORION ZIP package from the download button.</p></div>
+        <div class="install-step"><span>02</span><h3>Extract</h3><p>Unzip the package into a folder on the computer.</p></div>
+        <div class="install-step"><span>03</span><h3>Open</h3><p>Enter the ORION folder and check the included instructions.</p></div>
+        <div class="install-step"><span>04</span><h3>Launch</h3><p>Run the provided launcher or Python entry point.</p></div>
+      </div>
+      <div class="notice glass"><span>!</span><p>If the actual build requires Python or dependencies, install them according to the ORION README before launching.</p></div>
+    </section>
+
+    <section class="technology section">
+      <div class="tech-orb"><img src="assets/orion-logo.png" alt="ORION"></div>
+      <div>
+        <div class="section-kicker">07 / TECHNOLOGY</div>
+        <h2 class="display">Built with<br><span>Python.</span></h2>
+        <p>ORION is a practical exploration of voice interaction, automation and local desktop assistance, brought together through a Python application.</p>
+        <div class="tags"><span>PYTHON</span><span>VOICE</span><span>AUTOMATION</span><span>LOCAL</span><span>AI ASSISTANT</span></div>
+      </div>
+    </section>
+
+    <section class="story section">
+      <div class="section-kicker">08 / THE STORY</div>
+      <div class="story-title"><h2 class="display">From idea<br><span>to assistant.</span></h2></div>
+      <div class="timeline">
+        <article><span>01 — IDEA</span><h3>A simple question.</h3><p>What if a computer could become more helpful?</p></article>
+        <article><span>02 — BUILD</span><h3>Experiment meets code.</h3><p>Python, automation and voice interaction came together.</p></article>
+        <article><span>03 — ORION</span><h3>A personal assistant takes shape.</h3><p>A focused desktop experience built by Zain.</p></article>
+      </div>
+    </section>
+
+    <section class="developer section" id="developer">
+      <div class="developer-mark">Z</div>
+      <div>
+        <div class="section-kicker">09 / DEVELOPER</div>
+        <h2 class="display">Built by<br><span>Zain.</span></h2>
+        <p>ORION started as an experiment in building a personal desktop assistant and evolved into a practical exploration of voice interaction, automation and intelligent software.</p>
+        <div class="developer-role"><span>DEVELOPER</span><strong>Zain</strong><small>Creator of ORION</small></div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="final-ring"></div>
+      <div class="section-kicker">10 / LAUNCH</div>
+      <h2>Launch your own<br><span>ORION.</span></h2>
+      <p>An assistant designed to stay close to your workflow.</p>
+      <a class="button button-primary" href="#download">Download ORION <span>↗</span></a>
+      <small>Offline desktop application</small>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <a class="brand" href="#overview"><img src="assets/orion-logo.png" alt="ORION logo"><span>ORION</span></a>
+      <span>Personal AI Assistant</span>
+      <span>Built by Zain</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ORION</span>
+      <div><a href="#overview">Overview</a><a href="#capabilities">Capabilities</a><a href="#download">Download</a><a href="#developer">Developer</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
